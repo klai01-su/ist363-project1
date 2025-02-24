@@ -35,7 +35,7 @@
         </ul>
     </header>
     
-    <div class="container">
+    <div class="container grid-lg">
         <div class="text-center text-dark mt-2">
             <h3>Meal of the Day: Margherita Pizza</h3>
             <div class="flex-centered container">
@@ -46,106 +46,104 @@
 
         <div class="p-2 mt-2">
             <h3>Recipes</h3>
-            <div class="columns">
-                <div class="filter">
-                    <input class="filter-tag" id="tag-0" type="radio" name="filter-radio" hidden="" checked="">
-                    <input class="filter-tag" id="tag-1" type="radio" name="filter-radio" hidden="">
-                    <input class="filter-tag" id="tag-2" type="radio" name="filter-radio" hidden="">
-                    <input class="filter-tag" id="tag-3" type="radio" name="filter-radio" hidden="">
-                    <div class="filter-nav">
-                        <label class="chip" for="tag-0">All</label>
-                        <label class="chip" for="tag-1">Pasta</label>
-                        <label class="chip" for="tag-2">Pizza</label>
-                        <label class="chip" for="tag-3">Dessert</label>
-                    </div>
-                    <div class="filter-body columns">
-                        <div class="column col-4 col-sm-12 filter-item" data-tag="tag-1">
-                            <div class="card bg-primary mt-2">
-                                <div class="card-image">
-                                    <a href="" target="_blank"><img class="img-responsive" src="images/Spaghetti-alla-Carbonara.jpg" alt="Carbonara"></a>
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title text-bold">Carbonara</div>
-                                    <div class="card-subtitle text-gray">Pasta</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>A creamy and savory pasta dish made with eggs, cheese, pancetta, and black pepper.</p>
-                                </div>
+            <div class="filter">
+                <input class="filter-tag" id="tag-0" type="radio" name="filter-radio" hidden="" checked="">
+                <input class="filter-tag" id="tag-1" type="radio" name="filter-radio" hidden="">
+                <input class="filter-tag" id="tag-2" type="radio" name="filter-radio" hidden="">
+                <input class="filter-tag" id="tag-3" type="radio" name="filter-radio" hidden="">
+                <div class="filter-nav">
+                    <label class="chip" for="tag-0">All</label>
+                    <label class="chip" for="tag-1">Pasta</label>
+                    <label class="chip" for="tag-2">Pizza</label>
+                    <label class="chip" for="tag-3">Dessert</label>
+                </div>
+                <div class="filter-body columns">
+                    <div class="column col-4 col-sm-12 filter-item my-2" data-tag="tag-1">
+                        <div class="card bg-primary">
+                            <div class="card-image">
+                                <a href="" target="_blank"><img class="img-responsive" src="images/Spaghetti-alla-Carbonara.jpg" alt="Carbonara"></a>
                             </div>
-                        </div>
-                        <div class="column col-4 col-sm-12 filter-item" data-tag="tag-1">
-                            <div class="card bg-primary mt-2">
-                                <div class="card-image">
-                                    <a href="" target="_blank"><img class="img-responsive" src="images/lasagna.jpg" alt="Lasagna"></a>
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title text-bold">Lasagna</div>
-                                    <div class="card-subtitle text-gray">Pasta</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>A classic Italian dish layered with pasta, rich meat sauce, and creamy cheese.</p>
-                                </div>
+                            <div class="card-header">
+                                <div class="card-title text-bold">Carbonara</div>
+                                <div class="card-subtitle text-gray">Pasta</div>
                             </div>
-                        </div>
-                        <div class="column col-4 col-sm-12 filter-item" data-tag="tag-3">
-                            <div class="card bg-primary mt-2">
-                                <div class="card-image">
-                                    <a href="" target="_blank"><img class="img-responsive" src="images/tiramisu.jpg" alt="Tiramisu"></a>
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title text-bold">Tiramisu</div>
-                                    <div class="card-subtitle text-gray">Dessert</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>A popular Italian dessert made with coffee-soaked ladyfingers and mascarpone cream.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column col-4 col-sm-12 filter-item" data-tag="tag-2">
-                            <div class="card bg-primary mt-2">
-                                <div class="card-image">
-                                    <a href="" target="_blank"><img class="img-responsive" src="images/marg_pizza_2.jpg" alt="Marg Pizza"></a>
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title text-bold">Margherita</div>
-                                    <div class="card-subtitle text-gray">Pizza</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>Classic pizza with tomato, mozzarella, basil, olive oil, and salt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column col-4 col-sm-12 filter-item" data-tag="tag-1">
-                            <div class="card bg-primary mt-2">
-                                <div class="card-image">
-                                    <a href="" target="_blank"><img class="img-responsive" src="images/bolognese.jpg" alt="Bolognese Pasta"></a>
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title text-bold">Bolognese</div>
-                                    <div class="card-subtitle text-gray">Pasta</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>Rich meat sauce with ground beef, tomatoes, wine, and vegetables, served with pasta.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column col-4 col-sm-12 filter-item" data-tag="tag-2">
-                            <div class="card bg-primary mt-2">
-                                <div class="card-image">
-                                    <a href="" target="_blank"><img class="img-responsive" src="images/sicilian-style-pizza.jpg" alt="Sicilian Pizza"></a>
-                                </div>
-                                <div class="card-header">
-                                    <div class="card-title text-bold">Sicilian</div>
-                                    <div class="card-subtitle text-gray">Pizza</div>
-                                </div>
-                                <div class="card-body">
-                                    <p>Thick, rectangular pizza with tomato sauce, mozzarella, anchovies, and olives.</p>
-                                </div>
+                            <div class="card-body">
+                                A creamy and savory pasta dish made with eggs, cheese, pancetta, and black pepper.
                             </div>
                         </div>
                     </div>
-                </div>        
-            </div>
+                    <div class="column col-4 col-sm-12 filter-item my-2" data-tag="tag-1">
+                        <div class="card bg-primary">
+                            <div class="card-image">
+                                <a href="" target="_blank"><img class="img-responsive" src="images/lasagna.jpg" alt="Lasagna"></a>
+                            </div>
+                            <div class="card-header">
+                                <div class="card-title text-bold">Lasagna</div>
+                                <div class="card-subtitle text-gray">Pasta</div>
+                            </div>
+                            <div class="card-body">
+                                A classic Italian dish layered with pasta, rich meat sauce, and creamy cheese.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-4 col-sm-12 filter-item my-2" data-tag="tag-3">
+                        <div class="card bg-primary">
+                            <div class="card-image">
+                                <a href="" target="_blank"><img class="img-responsive" src="images/tiramisu.jpg" alt="Tiramisu"></a>
+                            </div>
+                            <div class="card-header">
+                                <div class="card-title text-bold">Tiramisu</div>
+                                <div class="card-subtitle text-gray">Dessert</div>
+                            </div>
+                            <div class="card-body">
+                                A popular Italian dessert made with coffee-soaked ladyfingers and mascarpone cream.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-4 col-sm-12 filter-item my-2" data-tag="tag-2">
+                        <div class="card bg-primary">
+                            <div class="card-image">
+                                <a href="" target="_blank"><img class="img-responsive" src="images/marg_pizza_2.jpg" alt="Marg Pizza"></a>
+                            </div>
+                            <div class="card-header">
+                                <div class="card-title text-bold">Margherita</div>
+                                <div class="card-subtitle text-gray">Pizza</div>
+                            </div>
+                            <div class="card-body">
+                                Classic pizza with tomato, mozzarella, basil, olive oil, and salt.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-4 col-sm-12 filter-item my-2" data-tag="tag-1">
+                        <div class="card bg-primary">
+                            <div class="card-image">
+                                <a href="" target="_blank"><img class="img-responsive" src="images/bolognese.jpg" alt="Bolognese Pasta"></a>
+                            </div>
+                            <div class="card-header">
+                                <div class="card-title text-bold">Bolognese</div>
+                                <div class="card-subtitle text-gray">Pasta</div>
+                            </div>
+                            <div class="card-body">
+                                Rich meat sauce with ground beef, tomatoes, wine, and vegetables, served with pasta.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-4 col-sm-12 filter-item my-2" data-tag="tag-2">
+                        <div class="card bg-primary">
+                            <div class="card-image">
+                                <a href="" target="_blank"><img class="img-responsive" src="images/sicilian-style-pizza.jpg" alt="Sicilian Pizza"></a>
+                            </div>
+                            <div class="card-header">
+                                <div class="card-title text-bold">Sicilian</div>
+                                <div class="card-subtitle text-gray">Pizza</div>
+                            </div>
+                            <div class="card-body">
+                                Thick, rectangular pizza with tomato sauce, mozzarella, anchovies, and olives.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
         </div>
     </div>
     <footer class="text-center bg-dark  p-2 mt-2">
